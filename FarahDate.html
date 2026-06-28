@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hey Farah 💌</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Nunito',sans-serif;background:linear-gradient(135deg,#FF2D78 0%,#FF9F1C 50%,#FFBF69 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;overflow:hidden}
+  .hbg{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:0}
+  .fh{position:absolute;animation:fup linear infinite;opacity:.25}
+  @keyframes fup{0%{transform:translateY(100vh) rotate(0deg);opacity:0}10%{opacity:.3}90%{opacity:.3}100%{transform:translateY(-120px) rotate(360deg);opacity:0}}
+  .card{background:#fff;border-radius:28px;padding:2.5rem 2rem;max-width:520px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(255,45,120,.25);position:relative;z-index:1}
+  .eb{font-size:3.5rem;display:block;margin-bottom:.4rem;animation:bnc 1.5s ease-in-out infinite}
+  @keyframes bnc{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  h1{font-family:'Pacifico',cursive;font-size:1.9rem;color:#FF2D78;margin-bottom:.3rem;line-height:1.3}
+  .sub{color:#999;font-size:.9rem;margin-bottom:1.5rem;font-style:italic}
+  .rbox{background:#FFF0F6;border-radius:16px;padding:1rem 1.25rem;text-align:left;margin-bottom:1.5rem;border:2px dashed #FFB3CC}
+  .rbox h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:#FF2D78;margin-bottom:.6rem;font-weight:900}
+  .r{display:flex;align-items:flex-start;gap:.5rem;margin-bottom:.4rem;font-size:.88rem;color:#555}
+  .r:last-child{margin-bottom:0}
+  .q{font-family:'Pacifico',cursive;font-size:2.2rem;color:#222;margin-bottom:.3rem}
+  .q span{color:#FF2D78}
+  .qs{font-size:.8rem;color:#bbb;margin-bottom:1.5rem}
+  .btns{display:flex;gap:1rem;justify-content:center;align-items:center;position:relative;min-height:60px;margin-bottom:.4rem}
+  .byes{background:#FF2D78;color:#fff;border:none;padding:.85rem 2.2rem;border-radius:50px;font-size:1.15rem;font-family:'Nunito',sans-serif;font-weight:900;cursor:pointer;transition:transform .15s;box-shadow:0 6px 20px rgba(255,45,120,.35)}
+  .byes:hover{transform:scale(1.08)}
+  .bno{background:#f0f0f0;color:#bbb;border:2px solid #e0e0e0;padding:.65rem 1.5rem;border-radius:50px;font-size:.95rem;font-family:'Nunito',sans-serif;font-weight:700;cursor:pointer;position:absolute;right:0}
+  .nc{font-size:.75rem;color:#ccc;margin-top:.3rem;height:1rem}
+  .scr{display:none}
+  .scr.on{display:block}
+  .st{font-family:'Pacifico',cursive;font-size:1.5rem;color:#FF2D78;margin-bottom:.3rem}
+  .ss{font-size:.85rem;color:#999;margin-bottom:1.5rem}
+  .fg{margin-bottom:1rem;text-align:left}
+  .fg label{display:block;font-size:.78rem;font-weight:900;color:#FF2D78;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
+  .fg input,.fg select{width:100%;padding:.7rem 1rem;border:2px solid #FFCCE0;border-radius:12px;font-family:'Nunito',sans-serif;font-size:.95rem;color:#333;outline:none;transition:border-color .2s;background:#fff}
+  .fg input:focus,.fg select:focus{border-color:#FF2D78}
+  .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+  .bcnf{background:#FF2D78;color:#fff;border:none;padding:.9rem 2rem;border-radius:50px;font-size:1rem;font-family:'Nunito',sans-serif;font-weight:900;cursor:pointer;width:100%;margin-top:.5rem;box-shadow:0 6px 20px rgba(255,45,120,.3);transition:transform .15s}
+  .bcnf:hover{transform:scale(1.03)}
+  .ce{font-size:3rem;display:block;animation:si .5s ease-out}
+  @keyframes si{0%{transform:scale(0) rotate(-180deg)}100%{transform:scale(1) rotate(0deg)}}
+  .ym{font-family:'Pacifico',cursive;font-size:1.6rem;color:#FF2D78;margin:.6rem 0 .4rem}
+  .ys{color:#666;font-size:.9rem;line-height:1.6;margin-bottom:1.2rem}
+  .dh{animation:dv .6s ease-in-out infinite alternate;display:inline-block}
+  @keyframes dv{0%{transform:rotate(-10deg) scale(1)}100%{transform:rotate(10deg) scale(1.2)}}
+  .cbox{background:#FFF0F6;border-radius:14px;padding:1rem 1.25rem;text-align:left;border:2px dashed #FFB3CC;margin:1rem 0;font-size:.88rem;color:#555}
+  .cbox strong{color:#FF2D78;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;display:block;margin-bottom:.5rem}
+  .crow{display:flex;gap:.5rem;margin-bottom:.3rem;align-items:flex-start}
+  .bpdf{background:#7C3AED;color:#fff;border:none;padding:.85rem 1.8rem;border-radius:50px;font-size:.95rem;font-family:'Nunito',sans-serif;font-weight:900;cursor:pointer;width:100%;box-shadow:0 6px 20px rgba(124,58,237,.3);transition:transform .15s;margin-top:.3rem}
+  .bpdf:hover{transform:scale(1.04)}
+  .en{font-size:.75rem;color:#bbb;margin-top:.5rem}
+</style>
+</head>
+<body>
+
+<div class="hbg" id="hbg"></div>
+
+<div class="card">
+  <div id="s1" class="scr on">
+    <span class="eb">💌</span>
+    <h1>Hey Farah 👀</h1>
+    <p class="sub">Yes, you. The ridiculously cute one reading this.</p>
+    <div class="rbox">
+      <h3>🧠 Scientifically proven reasons to say yes:</h3>
+      <div class="r">🌮 <span>Incredible Pan-Asian food at Miss Li Lee's awaits.</span></div>
+      <div class="r">😂 <span>I promise to make you laugh at least 3 times. Minimum.</span></div>
+      <div class="r">⭐ <span>Studies show saying yes makes you 100% more awesome.</span></div>
+      <div class="r">🚗 <span>I'll pick you up from home — zero effort required on your part.</span></div>
+      <div class="r">💅 <span>You deserve a great night out. And I will absolutely deliver.</span></div>
+    </div>
+    <p class="q">Will you go on a<br><span>date with me?</span></p>
+    <p class="qs">(The correct answer is obviously yes)</p>
+    <div class="btns">
+      <button class="byes" onclick="goForm()">💖 YES!!</button>
+      <button class="bno" id="noBtn" onmouseover="runAway()" ontouchstart="runAway()">No</button>
+    </div>
+    <p class="nc" id="nc"></p>
+  </div>
+
+  <div id="s2" class="scr">
+    <span class="eb" style="animation:none">🎉</span>
+    <p class="st">She said YES!!</p>
+    <p class="ss">Pick the date and time and we're all set ✨</p>
+    <div class="fg">
+      <label>📅 Choose a date</label>
+      <input type="date" id="di">
+    </div>
+    <div class="dgrid">
+      <div class="fg">
+        <label>⏰ Pickup time</label>
+        <input type="time" id="ti" value="19:30">
+      </div>
+      <div class="fg">
+        <label>👗 Dress code</label>
+        <select id="dri">
+          <option value="Smart Casual">Smart Casual</option>
+          <option value="Casual Chic">Casual Chic</option>
+          <option value="Formal">Formal</option>
+          <option value="Whatever you want">Whatever you want</option>
+        </select>
+      </div>
+    </div>
+    <button class="bcnf" onclick="confirmDate()">💌 Get my confirmation!</button>
+  </div>
+
+  <div id="s3" class="scr">
+    <span class="ce">🎊</span>
+    <p class="ym">It's official, Farah! 💖</p>
+    <p class="ys"><span class="dh">💖</span> Your date is locked in! <span class="dh">💖</span><br>Get ready for a night you won't forget.</p>
+    <div class="cbox">
+      <strong>📋 Your date details</strong>
+      <div class="crow">📅 <span id="cd">—</span></div>
+      <div class="crow">⏰ <span id="ct">—</span></div>
+      <div class="crow">🍜 <span>Miss Li Lee's — Arkan Plaza, Sheikh Zayed City</span></div>
+      <div class="crow">🚗 <span>Pickup from your home</span></div>
+      <div class="crow">👗 <span id="cdr">—</span></div>
+    </div>
+    <button class="bpdf" onclick="dlPDF()">📄 Download PDF confirmation</button>
+    <p class="en">Save it, screenshot it, frame it 💌</p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const noMsgs=["Too slow!","Nope, try YES instead!","Haha nice try","The button is allergic to clicks!","Maybe the other button?","NO has left the chat","You'll never catch it!","Just click YES. It's right there!"];
+let noCount=0;
+const noBtn=document.getElementById('noBtn');
+
+function runAway(){
+  const card=document.querySelector('.card');
+  const cr=card.getBoundingClientRect();
+  const br=noBtn.getBoundingClientRect();
+  noBtn.style.position='absolute';
+  noBtn.style.left=Math.random()*(cr.width-br.width-20)+'px';
+  noBtn.style.top=Math.random()*(cr.height-br.height-20)+'px';
+  noBtn.style.right='auto';
+  noBtn.style.transition='left .15s,top .15s';
+  noCount++;
+  document.getElementById('nc').textContent=noCount<=noMsgs.length?noMsgs[noCount-1]:'';
+  if(noCount>=5){noBtn.style.fontSize=Math.max(.4,1-noCount*.06)+'rem';noBtn.style.opacity=Math.max(.1,1-noCount*.08);}
+}
+
+function sw(id){['s1','s2','s3'].forEach(s=>document.getElementById(s).classList.remove('on'));document.getElementById(id).classList.add('on');}
+
+function goForm(){
+  sw('s2');
+  const mn=new Date();mn.setDate(mn.getDate()+1);
+  document.getElementById('di').min=mn.toISOString().split('T')[0];
+  document.getElementById('di').value=mn.toISOString().split('T')[0];
+}
+
+function confirmDate(){
+  const date=document.getElementById('di').value;
+  const time=document.getElementById('ti').value;
+  const dress=document.getElementById('dri').value;
+  if(!date){alert('Pick a date!');return;}
+  const dt=new Date(date+'T'+time);
+  const fd=dt.toLocaleDateString('en-GB',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+  const ft=dt.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('cd').textContent=fd;
+  document.getElementById('ct').textContent='Pickup at '+ft;
+  document.getElementById('cdr').textContent='Dress code: '+dress;
+  window._d={date:fd,time:ft,dress};
+  sw('s3');
+  boom();
+}
+
+function dlPDF(){
+  const {jsPDF}=window.jspdf;
+  const d=window._d;
+  const doc=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
+  const W=210;
+
+  doc.setFillColor(255,240,246);
+  doc.rect(0,0,W,297,'F');
+
+  doc.setFillColor(255,45,120);
+  doc.rect(0,0,W,48,'F');
+
+  doc.setFont('helvetica','bold');
+  doc.setFontSize(24);
+  doc.setTextColor(255,255,255);
+  doc.text('Date Confirmation',W/2,22,{align:'center'});
+  doc.setFontSize(12);
+  doc.setFont('helvetica','normal');
+  doc.text("Miss Li Lee's Restaurant & Bar",W/2,35,{align:'center'});
+
+  doc.setFontSize(10);
+  doc.setTextColor(255,179,204);
+  doc.text('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *',W/2,56,{align:'center'});
+
+  doc.setFontSize(20);
+  doc.setFont('helvetica','bold');
+  doc.setTextColor(255,45,120);
+  doc.text('Hey Farah!',W/2,70,{align:'center'});
+
+  doc.setFontSize(11);
+  doc.setFont('helvetica','normal');
+  doc.setTextColor(110,110,110);
+  doc.text("Your date is confirmed and we can't wait!",W/2,80,{align:'center'});
+  doc.text("Get ready for an amazing night at Miss Li Lee's.",W/2,89,{align:'center'});
+
+  doc.setFillColor(255,255,255);
+  doc.roundedRect(20,100,170,100,6,6,'F');
+  doc.setDrawColor(255,179,204);
+  doc.setLineWidth(0.5);
+  doc.roundedRect(20,100,170,100,6,6,'S');
+
+  doc.setFontSize(13);
+  doc.setFont('helvetica','bold');
+  doc.setTextColor(255,45,120);
+  doc.text('DATE DETAILS',W/2,114,{align:'center'});
+  doc.setDrawColor(255,210,230);
+  doc.setLineWidth(0.3);
+  doc.line(30,119,180,119);
+
+  const rows=[
+    ['Date',d.date],
+    ['Pickup time',"I'll be at yours at "+d.time],
+    ['Restaurant',"Miss Li Lee's, Arkan Plaza, Sheikh Zayed"],
+    ['Address','26th of July Corridor, Sheikh Zayed City'],
+    ['Dress code',d.dress],
+  ];
+
+  let y=130;
+  rows.forEach(([lbl,val])=>{
+    doc.setFontSize(9);
+    doc.setFont('helvetica','bold');
+    doc.setTextColor(200,50,100);
+    doc.text(lbl,30,y);
+    doc.setFont('helvetica','normal');
+    doc.setTextColor(60,60,60);
+    const lines=doc.splitTextToSize(val,98);
+    lines.forEach((ln,i)=>doc.text(ln,102,y+i*5.5));
+    y+=lines.length>1?16:12;
+  });
+
+  doc.setFillColor(255,255,255);
+  doc.roundedRect(20,210,170,50,6,6,'F');
+  doc.setDrawColor(255,179,204);
+  doc.setLineWidth(0.5);
+  doc.roundedRect(20,210,170,50,6,6,'S');
+
+  doc.setFontSize(12);
+  doc.setFont('helvetica','bold');
+  doc.setTextColor(255,45,120);
+  doc.text('How the night works',W/2,223,{align:'center'});
+
+  doc.setFontSize(9);
+  doc.setFont('helvetica','normal');
+  doc.setTextColor(80,80,80);
+  doc.text("1.  I'll pick you up from home at "+d.time+'.',30,234);
+  doc.text("2.  We head to Miss Li Lee's for an unforgettable Pan-Asian dinner.",30,243);
+  doc.text("3.  You have the best night. That's a guarantee.",30,252);
+
+  doc.setFontSize(10);
+  doc.setTextColor(255,179,204);
+  doc.text('* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *',W/2,268,{align:'center'});
+
+  doc.setFillColor(255,45,120);
+  doc.rect(0,273,W,24,'F');
+  doc.setFontSize(12);
+  doc.setFont('helvetica','bold');
+  doc.setTextColor(255,255,255);
+  doc.text("Can't wait, Farah!  See you very soon!",W/2,282,{align:'center'});
+  doc.setFontSize(8);
+  doc.setFont('helvetica','normal');
+  doc.text("Miss Li Lee's  |  Arkan Plaza, Sheikh Zayed  |  26th of July Corridor",W/2,291,{align:'center'});
+
+  doc.save('FarahDateConfirmation.pdf');
+}
+
+function boom(){
+  const ems=['💖','🎉','✨','🌸','💫','🥂','😍','🌹','🎊','💕','🍜'];
+  for(let i=0;i<35;i++){
+    setTimeout(()=>{
+      const el=document.createElement('div');
+      el.style.cssText='position:fixed;left:'+Math.random()*100+'%;bottom:0;font-size:'+(1+Math.random()*1.8)+'rem;pointer-events:none;animation:fup '+(2.5+Math.random()*3)+'s linear forwards;z-index:999';
+      el.textContent=ems[Math.floor(Math.random()*ems.length)];
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),7000);
+    },i*90);
+  }
+}
+
+(function(){
+  const bg=document.getElementById('hbg');
+  const ems=['❤️','💕','💗','💓','💞','🌸','✨','🌹'];
+  setInterval(()=>{
+    const el=document.createElement('div');el.className='fh';
+    el.style.left=Math.random()*100+'%';el.style.bottom='0';
+    el.style.fontSize=(1+Math.random()*1.2)+'rem';
+    el.style.animationDuration=(6+Math.random()*8)+'s';
+    el.style.animationDelay=(-Math.random()*4)+'s';
+    el.textContent=ems[Math.floor(Math.random()*ems.length)];
+    bg.appendChild(el);setTimeout(()=>el.remove(),14000);
+  },700);
+})();
+</script>
+</body>
+</html>
